@@ -1,5 +1,29 @@
 {% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  {% block content %}
+  <main>
+    <h1>Welcome to <span class="cursive-title">SnackVille</span></h1>
+    <section class="intro">
+      <div class="intro-text">SnackVille is Home to the best snacks in the Galactic Snackverse. There are all sorts of snacks
+      or maybe you want to <strong>add a Snack</strong> to the empire! Please only add delicious snacks, and not snacks that taste like vegetables, those can be found in the Vegiverse.  
+      </div>
+      <div><img class="intro-img"
+          src="https://images.unsplash.com/flagged/photo-1559855603-ce4c8f480d76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGFwcHklMjBlYXRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60">
+      </div>
+    </section>
 
-{% block content %}
-  <h1>homepage</h1>
-{% endblock content %}
+  </main>
+  {% endblock content %}
+  
+</body>
+</html>
+

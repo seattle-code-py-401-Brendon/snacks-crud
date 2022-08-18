@@ -1,9 +1,15 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-
+<main>
   <h2>Details about {{ snack.title }}</h2>
   <h2>Purchaser: {{ snack.purchaser }}</h2>
   <p>{{ snack.description }}</p>
+  <a href="{% url 'delete_snack' snack.pk %}">Delete</a>
+  <a href="{% url 'update_snack' snack.pk %}">Update</a>
+</main>
+
+  
 
 {% endblock content %}

@@ -4,8 +4,31 @@ html, body {
     margin: 0;
     background-color: #91DDFF;
   }
-  
-  
+
+  span{
+    color: #3DC275;
+  }
+
+  span:first-child {
+    color: #C23D8A;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  label{
+    color: purple;
+  }
+  textarea{
+    height: 10px;
+    background-color: pink;
+  }
+  input{
+    border-radius: 10%;
+    background-color: pink;
+  }
+
   .center {
     display: flex;
     align-items: center;
@@ -18,6 +41,26 @@ html, body {
   i {
     visibility: hidden;
   }
+
+  main{
+    font-family:cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section div {
+    max-width: 500px;
+  }
+  section img {
+    height: 200px;
+  }
+
+  .intro {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:25px;
+    max-width: 900px;
+  }
   
   a {
     color:#C23D8A;
@@ -27,6 +70,10 @@ html, body {
   
   a:hover {
     color: #3DC275;
+  }
+
+  li{
+    list-style-type: none;
   }
   
 @media only screen and (max-width: 500px) {
