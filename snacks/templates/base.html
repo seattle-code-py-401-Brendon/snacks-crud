@@ -14,11 +14,9 @@
     <img src="{% static 'snacks/snackies.png' %}" alt="">
     <nav>
     <i class="fa-solid fa-bars"></i>
-    <a href="#">nav1</a>
-    <a href="#">nav2</a>
-    <a href="#">nav3</a>
-    <a href="#">nav4</a>
-    <a href="#">nav5</a>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'list_snacks' %}">Snacks</a>
+    <a href="#">About</a>
     </nav>
 </header>
 {% block content %}
